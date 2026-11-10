@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "tense": "past",
+        "en": "The dog barked loudly.",
+        "es": "El perro ladró fuertemente."
+    },
+    {
+        "id": 2,
+        "tense": "present",
+        "en": "The sun is bright.",
+        "es": "El sol brilla intensamente."
+    },
+    {
+        "id": 3,
+        "tense": "future",
+        "en": "We will visit Grandma.",
+        "es": "Visitaremos a la abuela"
+    },
+    {
+        "id": 4,
+        "tense": "question",
+        "en": "Where is my backpack?",
+        "es": "¿Donde esta mi mochila?"
+    },
+    {
+        "id": 5,
+        "tense": "exclamation",
+        "en": "Watch out for that car!",
+        "es": "¡Cuidado con ese coche!"
+    },
+    {
+        "id": 6,
+        "tense": "past",
+        "en": "Maria baked a cake.",
+        "es": "Maria horneo un pastel."
+    }
+]

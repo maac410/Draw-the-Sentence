@@ -1,8 +1,4 @@
-export{select_button};
-
-let select_button = document.getElementById("select_button");
-let sentence_cont = document.getElementById("sentence_cont");
-let points_container = document.getElementById("points_container");
+import {select_button, sentence_cont, points_cont} from "./getElementById.js";
 
 function confirm_sentence() {
     let element = document.getElementsByName("sentences");
@@ -18,7 +14,7 @@ function confirm_sentence() {
     }
     sentence_cont.style.display = "none";
     select_button.disabled = true;
-    points_container.style.display = "block";
+    points_cont.style.display = "block";
 }
 
 select_button.addEventListener("click", confirm_sentence);

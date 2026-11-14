@@ -1,4 +1,5 @@
-import {dice,dice_roll} from "./roll_dice.js";
+import {dice_roll} from "./roll_dice.js";
+import {dice_button, sentence_cont} from "./getElementById.js";
 
 async function init() {
   let response = await fetch('/db/sentences.json');
@@ -16,9 +17,7 @@ function main(sentences, roll) {
   }
   let lucky_sentences = pool.slice(0, roll);
 
-  for (let element of lucky_sentences) {
-    let container = document.getElementById("sentence_cont");
-    
+  for (let element of lucky_sentences) {    
     let radio = document.createElement("input");
     radio.type = "radio";
     radio.name = "sentences";
@@ -36,7 +35,7 @@ function main(sentences, roll) {
     translate_button.name = "translate";
     translate_button.addEventListener("click", () => translate_sentence(text, element));
 
-    container.append(label, translate_button, document.createElement("br"));
+    sentence_cont.append(label, translate_button);
   }
   console.log(roll);
   console.log(lucky_sentences);
@@ -52,4 +51,4 @@ function translate_sentence(text, element) {
   }
 }
 
-dice.addEventListener("click",init);
+dice_button.addEventListener("click",init);

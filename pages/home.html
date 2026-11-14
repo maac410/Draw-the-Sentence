@@ -5,14 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Draw The Sentence!</title>
 
-    <script type="module" src="../js/roll_dice.js"></script>
-    <script type="module" src="../js/list_sentences.js"></script>
-    <script type="module" src="../js/confirm_sentence.js"></script>
-    <script type="module" src="../js/clicked_button.js"></script>
-    <script type="module" src="../js/list_buttons.js"></script>
+    <script type="module" src="../js/main.js"></script>
 </head>
 <body>
-    <h2>Draw The Sentence!</h2>
+<div id="game_rules_cont">
+    <div id="titles_cont"></div>
 
     <div id="players_cont">
         <p>Select the Number of Players</p>
@@ -24,17 +21,22 @@
         <p>Select the Number of Turns</p>
     </div>
 
+    <button id="confirm_game_button">Confirm Game</button>
+    <div id="confirm_error"></div>
+</div>
+<div id="game_cont" style="display:none">
     <div>
         <p>Player 1 Roll the Dice:</p>
-        <button value="0" name="turn" id="dice">Roll!</button>
+        <button value="0" name="turn" id="dice_button">Roll!</button>
     </div>
     <div>
         <p>Select the Senetence!:</p>
         <div id="sentence_cont"> </div>
         <button id="select_button" disabled>Select Sentence</button>
     </div>
-    <div id="points_container" style="display:none">
+    <div id="points_cont" style="display:none">
         <p>Turn Score:</p>
     </div>
+</div>
 </body>
 </html>

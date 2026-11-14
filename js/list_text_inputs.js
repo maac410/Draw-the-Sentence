@@ -15,6 +15,7 @@ function list_text_inputs(input_name, number, cont_id, message) {
         input.type = "text";
         input.name = input_name;
         input.placeholder = message + " " + i;
+        input.required = true;
         container.appendChild(input);
     }
 }
